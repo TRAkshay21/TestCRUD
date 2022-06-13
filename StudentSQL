@@ -1,0 +1,15 @@
+CREATE TABLE studenttest(
+	name varchar(50),
+	rollnumber varchar(50),
+	grade varchar(50),
+	age numeric,
+	totalmarks numeric
+);
+
+DELETE from studenttest where studenttest.rollnumber='1';
+
+SELECT  * from studenttest;
+
+update studenttest set totalmarks=500,grade='s' where rollnumber='1001';
+
+SELECT  * from studenttest WHERE grade='S';
